@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(helmet());
 app.use(cors({
-    origin: 'http://localhost:5500', // Adjust based on frontend port
+    origin: ['http://localhost:5500', 'http://127.0.0.1:5500', 'https://appp-1mj153fvx-appps-projects-3ce72f8a.vercel.app'], // Adjust based on frontend port
     credentials: true
 }));
 app.use(morgan('dev'));
@@ -42,3 +42,4 @@ app.use('/api/admin', adminRoutes);
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
