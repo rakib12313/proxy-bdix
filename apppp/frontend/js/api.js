@@ -1,5 +1,5 @@
 
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://my-file-storage-api.onrender.com';
 
 const api = {
     async post(endpoint, data) {
@@ -43,3 +43,4 @@ const api = {
         return response.json();
     }
 };
+
