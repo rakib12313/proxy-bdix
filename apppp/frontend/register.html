@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | SecureVault</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="auth-card glass">
+            <h2 style="text-align: center;">Create Account</h2>
+            <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">Join SecureVault today</p>
+
+            <form id="registerForm">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" required placeholder="John Doe">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required placeholder="you@example.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="Min 8 chars, strong">
+                </div>
+
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required placeholder="Confirm password">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+            </form>
+
+            <p style="text-align: center; margin-top: 1.5rem; font-size: 0.9rem; color: var(--text-muted);">
+                Already have an account? <a href="login.html"
+                    style="color: var(--primary); text-decoration: none;">Login</a>
+            </p>
+        </div>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+
+</html>
